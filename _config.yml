@@ -1,20 +1,23 @@
 # Site settings
-title: 博客标题
-subtitle: 博客副标题
-description: 博客描述
-baseurl: "" # the subpath of your site, e.g. /blog
+title: 文光小筑
+subtitle: 差不多就是差很多
+description: 他山之石，可以攻玉。
+baseurl: "" # the subpath of your site, /nanwenguang
 url: "http://yourdomain.com" # 你的域名
 page_no_title: "No title" # 文章无标题时默认显示内容
 beian: # "备案号"
-email: email@yourdomain.com
+author: nwg
+email: wenguang.nan.cs@gmail.com
 
 # Build settings
+permalink: /:year/:month/:day/:title/
+exclude: ["README.md", "changelog.md", "server", "tools", "Pipfile"]
+plugins: [jekyll-paginate]
 markdown: kramdown
-gems: [jekyll-paginate]
 
 # Pageinate settings
-paginate: 10 # 分页大小
-paginate_path: ":num"
+paginate: 7 # 分页大小
+paginate_path: "page/:num/"
 
 # Search settings
 baidu_search: true
@@ -28,21 +31,20 @@ menu:
   - page: 归档
     directory: archives/
     icon: icon-archive
+  - page: 标签
+    directory: tags/
+    icon: icon-tags
   - page: 关于
     directory: about/
     icon: icon-about
-  - page: 历史
-    directory: history/
-    icon: icon-history
+  # - page: 历史
+  #   directory: history/
+  #   icon: icon-history
   - page: 订阅
     directory: feed.xml
     icon: icon-rss
 
 # Link settings
 links: # 友情链接
-  - title: site-name1
-    url: http://www.example1.com/
-  - title: site-name2
-    url: http://www.example2.com/
-  - title: site-name3
-    url: http://www.example3.com/
+  - title: Jekyll 博客系统
+    url: http://jekyllcn.com/
