@@ -6,6 +6,10 @@ keywords: Docker 虚拟机 容器 镜像
 tags: Docker
 ---
 
+Docker很早之前就火起来了，但是我在读书的时候都没有主动去了解过，现在学习了下真是有种相见恨晚的感觉。这也侧面说明了时刻去接触一些新的知识对于程序员而言的重要性。
+
+我一向不是特别喜欢琐碎的介绍一个东西是怎么组成怎么使用的。一个新的技术，他的初衷和时代背景是什么，以及为什么它能够突出重围，这方面我觉得更具有思考的价值。本文侧重于介绍Docker是为了什么而诞生的，以及为什么Docker可以成为一项普遍为人所接受的技术，其主要的创新点在哪里。当然本文还是对Docker的使用进行了最基本的说明。希望读过本文的人可以对Docker有着清晰全面的认识。
+
 ### Docker的发展Docker的发展
 
 一家专注于云服务，名为dotCloud的公司，于2013年早些时候开源了他们的Docker项目。Dokcer基于谷歌的Golang语言，一开始仅仅只是该公司为了在其数千台服务器可以快速开发部署而衍生的技术。开源后，Docker一举受到了开源社区的重视，成为了炙手可热的开源项目。不到一年，该公司雇佣了新的CEO，加入了Linux基金会，并改名为Docker Inc，并表示将公司的业务重点集中在Docker的发展上。
@@ -117,10 +121,17 @@ Docker的命令基本都是围绕容器和镜像。通过明确容器和镜像�
 如果想要build一个新的镜像，只需要将容器的最上层读写层做一次commit，将其转化为只读的只读层，生成一个比原来镜像多一层只读层的镜像。
 
 参考资料
+
 [Docker开发指南](https://www.itpanda.net/book/53 "Docker开发指南")
+
 [Docker: Lightweight Linux Containers for Consistent Development and Deployment](https://www.seltzer.com/margo/teaching/CS508.19/papers/merkel14.pdf "Docker: Lightweight Linux Containers for Consistent Development and Deployment")
+
 [KVM, Xen and Docker: a performance analysis for ARM based NFV and Cloud computing](https://s3.amazonaws.com/academia.edu.documents/51689706/raho2015.pdf?response-content-disposition=inline%3B%20filename%3DKVM_Xen_and_Docker_a_performance_analysi.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWOWYYGZ2Y53UL3A%2F20191230%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20191230T064319Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=02ed0eb328e1145ff88727f474a520c0eec9fa6fb5ebc1483229d1fce3d4dcdc "KVM, Xen and Docker: a performance analysis for ARM based NFV and Cloud computing")
+
 [To Docker or not to Docker: a security perspective](https://www.researchgate.net/profile/Roberto_Pietro/publication/309965523_To_Docker_or_Not_to_Docker_A_Security_Perspective/links/5bd2f7c1a6fdcc3a8da6c537/To-Docker-or-Not-to-Docker-A-Security-Perspective.pdf "To Docker or not to Docker: a security perspective")
+
 [5 Container Alternatives to Docker](https://containerjournal.com/topics/container-ecosystems/5-container-alternatives-to-docker/ "5 Container Alternatives to Docker")
+
 [Docker、Containerd、RunC...：你应该知道的所有](https://www.infoq.cn/article/2017/02/Docker-Containerd-RunC "Docker、Containerd、RunC...：你应该知道的所有")
+
 [docker的容器和镜像](http://dockone.io/article/783 "docker的容器和镜像")
