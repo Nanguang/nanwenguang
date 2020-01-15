@@ -1,9 +1,9 @@
 # Site settings
 title: 文光小筑
-subtitle: 差不多就是差很多
+subtitle: 差不多真的差很多
 description: 他山之石，可以攻玉。
 baseurl: "" # the subpath of your site, /nanwenguang
-url: "http://yourdomain.com" # 你的域名
+url: "http://blog.nanwenguang.xyz" # 你的域名
 page_no_title: "No title" # 文章无标题时默认显示内容
 beian: # "备案号"
 author: nwg
